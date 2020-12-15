@@ -6,6 +6,7 @@ git commit -m "zhao_"      --把暂缓区的所有内容提交到当前分支
 git log --pretty=oneline
 git reset --hard HEAD~100
 git reset --hard HEAD^
+git reset --hard e3b3906
 git reflog 记录每一条命令
 
 客户端与服务端生成ssh key
