@@ -10,8 +10,12 @@ git reset --hard e3b3906
 git reflog 记录每一条命令
 
 客户端与服务端生成ssh key
-https://blog.csdn.net/weixin_40922744/article/details/107576748
 ssh-keygen -t rsa -C "zky@bupt.edu.cn"
-git remote add origin git@github.com:Xxxxkai/learngit.git
-第一次：git push -u origin master
-第二次：git push origin master
+如果不需要设置密码 一路enter
+
+
+#fatal: remote origin already exists.
+git remote rm origin
+git remote add origin git@github.com:Xxxxkai/learn-git.git
+git branch -M main
+git push -u origin main
